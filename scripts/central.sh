@@ -16,7 +16,7 @@ usage () {
      echo "  p: Run with 1 up to MAX_PE pe's (default=1)"
      echo "  a: Either ADD or CAS (default=ADD)"
      echo "  i: Number of iterations (default=10000)"
-     echo "  o: If specified, bind all procs to same physical cpu (core 1)"
+     echo "  o: If specified, bind all procs to same physical cpu (core 0)"
      echo "  h: Display this message"
 }
 
