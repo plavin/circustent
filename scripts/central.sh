@@ -11,6 +11,10 @@
 # This script should be run from this directory. It assumes you have built in
 # circustent/build
 
+#################################
+#       Declare Functions       #
+#################################
+
 usage () {
      echo "Usage: $0 [-p MAX_PE] [-a algo] [-i iter] [-o] [-h]"
      echo "  p: Run with 1 up to MAX_PE pe's (default=1)"
