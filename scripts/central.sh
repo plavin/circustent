@@ -43,9 +43,9 @@ get_cpus () {
 #        Parse Arguments        #
 #################################
 
-MAX_PE=DEFAULT
-INSTR=DEFAULT
-ITER=DEFAULT
+MAX_PE=1
+INSTR=ADD
+ITER=100000
 PINALL0=0
 PINALL0_STR=OFF
 
@@ -67,18 +67,6 @@ while getopts ":p:a:i:oh" opt; do
       ;;
   esac
 done
-
-if [ "$INSTR" = "DEFAULT" ]; then
-    INSTR=ADD
-fi
-
-if [ "$ITER" = "DEFAULT" ]; then
-    ITER=$((10**5))
-fi
-
-if [ "$MAX_PE" = "DEFAULT" ]; then
-    MAX_PE=1
-fi
 
 #################################
 # Detect thread-pinning command #
