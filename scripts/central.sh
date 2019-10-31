@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 # Script author: Patrick Lavin
 # This is a script for running CENTRAL_ADD and CENTRAL_CAS with a varying number of
 # threads. You can also choose to bind every thread to the same physical cpu with
